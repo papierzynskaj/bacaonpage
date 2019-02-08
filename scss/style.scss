@@ -1,0 +1,154 @@
+//variables
+
+$darkGrey: #2d3236;
+$richBlue: rgb(226, 86, 62);
+$lightGrey: rgb(253, 250, 244);
+$softRed: rgb(155, 43, 23);
+$sectionHeading: 40px;
+$sectionSubHeading: 20px;
+$sectionSecond: 30px;
+$sectionInnerText: 15px;
+$circleSize: 20px;
+$sectionTitle: 20px;
+$sectionText: 15px;
+$mobileHeading: 30px;
+$mobileSubHeading: 18px;
+
+// Mixins
+@mixin container {
+    height: 80%;
+    text-align: center;
+    padding-top: 20px;
+
+    .heading {
+        font-size: $sectionHeading;
+        margin: 15px 10px 10px 10px;
+    }
+
+    .subheadline {
+        font-size: $sectionSubHeading;
+        font-weight: 300;
+        line-height: 1.6;
+    }
+
+    .banner {
+        font-size: $sectionInnerText;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .whitebox {
+        width: 25%;
+        min-width: 200px;
+        background-color: white;
+        text-align: center;
+        margin: 10px 20px 20px 20px;
+        padding: 20px;
+        line-height: 1.6;
+        max-height: 500px;
+        border-radius: 20%;
+    }
+
+    img {
+        height: 50px;
+    }
+
+    .title-box {
+        font-size: $sectionTitle;
+    }
+
+    hr {
+        height: 6px;
+        background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0 0;
+        border: 0;
+    }
+
+
+    .text-box {
+        font-size: $sectionText;
+        font-weight: 300;
+    }
+}
+
+//Code
+body {
+    min-height: 626px;
+    height: 100%;
+    background-color: $lightGrey;
+    font-family: 'Rubik', sans-serif;
+}
+
+.header {
+    background-color: white;
+    width: 100%;
+    display: block;
+
+    img {
+        margin-left: 5%;
+        height: 100px;
+    }
+}
+
+p {
+    color: $darkGrey;
+    margin: 15px;
+}
+
+h1,
+h3 {
+    color: white;
+}
+
+
+.container-top {
+    @include container;
+    background-color: $richBlue;
+    position: relative;
+}
+
+.container-bottom {
+    @include container;
+    background-color: $lightGrey;
+}
+
+
+.circle {
+    position: absolute;
+    width: $circleSize;
+    height: $circleSize;
+    background: $softRed;
+    border-radius: 40%;
+    bottom: -10px;
+    left: calc(50% - 10px);
+}
+
+@media screen and (max-width: 634px) {
+    .container-top {
+        .whitebox {
+            width: 100%;
+        }
+    }
+
+    .container-bottom {
+        .whitebox {
+            width: 100%;
+        }
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .container-top {
+        .heading {
+            font-size: $mobileHeading;
+        }
+
+        .subheadline {
+            font-size: $mobileSubHeading;
+            margin: 0 20px 0 20px;
+        }
+    }
+
+}
