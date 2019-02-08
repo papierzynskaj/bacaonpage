@@ -1,0 +1,134 @@
+body {
+  min-height: 626px;
+  height: 100%;
+  background-color: #fdfaf4;
+  font-family: 'Rubik', sans-serif; }
+
+.header {
+  background-color: white;
+  width: 100%;
+  display: block; }
+  .header img {
+    margin-left: 5%;
+    height: 100px; }
+
+p {
+  color: #2d3236;
+  margin: 15px; }
+
+h1,
+h3 {
+  color: white; }
+
+.container-top {
+  height: 80%;
+  text-align: center;
+  padding-top: 20px;
+  background-color: #e2563e;
+  position: relative; }
+  .container-top .heading {
+    font-size: 40px;
+    margin: 15px 10px 10px 10px; }
+  .container-top .subheadline {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.6; }
+  .container-top .banner {
+    font-size: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 30px; }
+  .container-top .whitebox {
+    width: 25%;
+    min-width: 200px;
+    background-color: white;
+    text-align: center;
+    margin: 10px 20px 20px 20px;
+    padding: 20px;
+    line-height: 1.6;
+    max-height: 500px;
+    border-radius: 20%; }
+  .container-top img {
+    height: 50px; }
+  .container-top .title-box {
+    font-size: 20px; }
+  .container-top hr {
+    height: 6px;
+    background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0 0;
+    border: 0; }
+  .container-top .text-box {
+    font-size: 15px;
+    font-weight: 300; }
+
+.container-bottom {
+  height: 80%;
+  text-align: center;
+  padding-top: 20px;
+  background-color: #fdfaf4; }
+  .container-bottom .heading {
+    font-size: 40px;
+    margin: 15px 10px 10px 10px; }
+  .container-bottom .subheadline {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.6; }
+  .container-bottom .banner {
+    font-size: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 30px; }
+  .container-bottom .whitebox {
+    width: 25%;
+    min-width: 200px;
+    background-color: white;
+    text-align: center;
+    margin: 10px 20px 20px 20px;
+    padding: 20px;
+    line-height: 1.6;
+    max-height: 500px;
+    border-radius: 20%; }
+  .container-bottom img {
+    height: 50px; }
+  .container-bottom .title-box {
+    font-size: 20px; }
+  .container-bottom hr {
+    height: 6px;
+    background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0 0;
+    border: 0; }
+  .container-bottom .text-box {
+    font-size: 15px;
+    font-weight: 300; }
+
+.circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #9b2b17;
+  border-radius: 40%;
+  bottom: -10px;
+  left: calc(50% - 10px); }
+
+@media screen and (max-width: 634px) {
+  .container-top .whitebox {
+    width: 100%; }
+  .container-bottom .whitebox {
+    width: 100%; } }
+
+@media screen and (max-width: 550px) {
+  .container-top .heading {
+    font-size: 30px; }
+  .container-top .subheadline {
+    font-size: 18px;
+    margin: 0 20px 0 20px; } }
